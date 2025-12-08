@@ -18,7 +18,7 @@ Systems like Kaspersky System Watcher, Windows Defender, Cylance, and CrowdStrik
 ### The Solution: Trusted Call Stack Spoofing
 
 By hijacking a function in a **Microsoft-signed assembly** (e.g., `System.Windows.Forms.dll`, `user32.dll`), we can execute arbitrary logic within a call stack that appears completely legitimate.
-Note: It's possible to do an JmpHook, which will hook MsgBox -> and just after call it to your custom code. LazyHook doesn't do that
+> Note: It's possible to do an JmpHook, which will hook MsgBox -> and just after call it to your custom code. LazyHook doesn't do that
 
 **Why This Works:**
 1. The hooked function is in a trusted, digitally-signed Microsoft DLL
